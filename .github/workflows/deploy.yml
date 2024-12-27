@@ -24,6 +24,10 @@ jobs:
     - name: Build VuePress site
       run: npm run docs:build # 如果命令不同，请更改为你的构建命令
 
+    - name: List built files
+      run: ls -l src/.vuepress/dist  # VuePress 构建完成后可以通过以下命令列出生成的文件，用于调试
+
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
