@@ -3,7 +3,7 @@ name: Deploy VuePress Site
 on:
   push:
     branches:
-      - main # 替换为你的主分支名称
+      - master # 替换为你的主分支名称
 
 jobs:
   build-and-deploy:
