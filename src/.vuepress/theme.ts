@@ -188,6 +188,11 @@ export default hopeTheme({
   },
 
   plugins: {
+    redirect: {
+      config: {
+        "/": "/zh/",
+      },
+    },
     blog: true,
 
     // Install @waline/client before enabling it
