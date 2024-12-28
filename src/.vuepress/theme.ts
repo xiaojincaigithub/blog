@@ -60,7 +60,7 @@ export default hopeTheme({
   },
 
   locales: {
-    "/": {
+    "/en/": {
       // navbar
       navbar: enNavbar,
 
@@ -73,7 +73,7 @@ export default hopeTheme({
 
       blog: {
         description: "A FrontEnd programmer",
-        intro: "/intro.html",
+        intro: "/zh/intro.html",
       },
 
       metaLocales: {
@@ -109,7 +109,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      "/en/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
     },
   },
@@ -193,14 +193,27 @@ export default hopeTheme({
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+    comment: {
+      // provider: "Waline",
+      // serverURL: "https://waline-comment.vuejs.press",
+      provider: "Giscus",
+      repo: "https://github.com/xiaojincaigithub/blog",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
     },
+
+    search: {
+      locales: {
+        "/en/": {
+          placeholder: "Search",
+        },
+        "/zh/": {
+          placeholder: "搜索",
+        },
+      },
+    }
 
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
@@ -245,7 +258,7 @@ export default hopeTheme({
     //       {
     //         name: "Demo",
     //         short_name: "Demo",
-    //         url: "/demo/",
+    //         url: "/en/demo/",
     //         icons: [
     //           {
     //             src: "/assets/icon/guide-maskable.png",
