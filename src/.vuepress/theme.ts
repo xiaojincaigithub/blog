@@ -202,7 +202,12 @@ export default hopeTheme({
       // provider: "Waline",
       // serverURL: "https://waline-comment.vuejs.press",
       provider: "Giscus",
-      repo: "https://github.com/xiaojincaigithub/blog",
+      repo: "xiaojincaigithub/blog", // 只写仓库的 owner/repo
+      repoId: "R_kgDOKV88ZA", // 仓库的 ID，需从 Giscus 官方网站生成
+      category: "General", // 评论分类的名称
+      categoryId: "DIC_kwDOKV88ZM4CljFN", // 分类的 ID
+      mapping: "pathname", // 评论和文章路径绑定
+      reactionsEnabled: true, // 是否启用 Reactions
     },
 
     components: {
